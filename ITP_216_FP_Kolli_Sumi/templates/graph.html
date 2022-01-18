@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Average Temperatures</title>
+</head>
+<body>
+<!-- Page that renders the graph based on user's input and has button to take user to separate page with chosen city's MLP graph -->
+    <h1>Average Temperatures for {{ city }} in {{ dates }}</h1>
+    <img src="{{ url_for('fig', city=city, dates=dates) }}" alt="graph" style= "width:50%;">
+    <form action="/chart/{{ city }}/{{ dates }}" method="POST">
+        <button name="forwardBtn" type="submit" style="margin-top:30px;font-size:20px;">Check out the Predictions for Average Temperature in {{ city }}</button>
+    </form>
+</body>
+</html>

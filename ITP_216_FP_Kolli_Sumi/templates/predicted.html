@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predicted Average Temperatures</title>
+</head>
+<body>
+<!--    Page that displays chart with MLP predictions -->
+    <h1>Predicted Average Temperatures for {{ city }}</h1>
+    <p>Displays the predicted frequencies of certain temperatures in {{ city }}</p>
+    <img src="{{ url_for('fig_predicted', city=city) }}" alt="graph" style= "width:50%;">
+</body>
+</html>

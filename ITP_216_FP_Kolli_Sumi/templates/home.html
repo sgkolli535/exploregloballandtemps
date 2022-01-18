@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ITP-216-FP-Sumi-Kolli</title>
+    </head>
+    <body>
+<!--    Home page that allows user to enter a city, choose a date range, and submit data to make a chart -->
+        <h1>ITP-216: Global Land Temperatures of Major Cities</h1>
+        <form action="/client" method="POST">
+            <h3>Enter a city to search for (please use proper capitalization): </h3>
+            <input type="text" name="city" placeholder="City">
+            <p>Select which time period you would like to visualize: </p>
+            <input type="radio" id="00" name="dates" value="1900 - 1910" required>
+            <label for="00"> 1900 - 1910 </label><br>
+            <input type="radio" id="10" name="dates" value="1911 - 1920" required>
+            <label for="10"> 1911 - 1920 </label><br>
+            <input type="radio" id="20" name="dates" value="1921 - 1930" required>
+            <label for="20"> 1921 - 1930 </label><br>
+            <input type="radio" id="30" name="dates" value="1931 - 1940" required>
+            <label for="30"> 1931 - 1940 </label><br>
+            <input type="radio" id="40" name="dates" value="1941 - 1950" required>
+            <label for="40"> 1941 - 1950 </label><br>
+            <input type="radio" id="50" name="dates" value="1951 - 1960" required>
+            <label for="50"> 1951 - 1960 </label><br>
+            <input type="radio" id="60" name="dates" value="1961 - 1970" required>
+            <label for="60"> 1961 - 1970 </label><br>
+            <input type="radio" id="70" name="dates" value="1971 - 1980" required>
+            <label for="70"> 1971 - 1980 </label><br>
+            <input type="radio" id="80" name="dates" value="1981 - 1990" required>
+            <label for="80"> 1981 - 1990 </label><br>
+            <input type="radio" id="90" name="dates" value="1991 - 2000" required>
+            <label for="90"> 1991 - 2000 </label><br>
+            <input type="radio" id="100" name="dates" value="2001 - 2013" required>
+            <label for="100"> 2001 - 2013 </label><br>
+            <input type="submit" value="Submit" style="margin-top: 30px;">
+        </form>
+    </body>
+</html>
